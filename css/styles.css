@@ -597,7 +597,7 @@ img {
   fill: currentColor;
 }
 .third-footer-container {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .email-form {
   display: flex;
@@ -678,6 +678,7 @@ img {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: fill var(--transition-dur-cub);
 }
 .modal-button:hover,
 .modal-button:focus .modal-button-icon {
@@ -780,12 +781,13 @@ img {
 .modal-form-checkbox:checked + .modal-form-checkbox-desc::before {
   background-image: url(../images/main-page/check.svg);
 }
-.modal-form-checkbox:focus + .modal-form-checkbox-desc::before {
-  outline: 1px solid rgba(33, 150, 243, 1);
-}
+
 .form-user-policy-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.user-policy-link {
+  color: var(--accent-text-color);
 }
